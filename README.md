@@ -23,7 +23,24 @@ Start the test by Forking this repository, and complete the following tasks:<br>
 ## Task 1:
 Assignment: Use the `api` found in `App.tsx` to make a request and fetch a list of all Pokémon.<br>
 Question 1: How did you manage to fetch the list and what tool did you use?<br>
+I managed to fetch the list of Pokémon by using the fetch API initially and then replaced it with axios for better handling of HTTP requests.<br>
 Question 2: What steps would you take to future improve this?<br>
+To further improve this, I would implement - 
+
+1. **Error Handling**:
+   Improve error handling to provide user-friendly messages.
+
+2. **Loading State and Lazy Loading**:
+   Add a loading state to indicate to the user that data is being fetched.
+
+3. **TypeScript Types**:
+   Will define TypeScript types for the API response to improve type safety.
+
+4. **Custom Hook**:
+   Create a custom hook for fetching data to make the component cleaner and more reusable.
+
+5. **Environment Variables**:
+   Store the API endpoint in environment variables for better configuration management.
 
 commit the code as `task-1`<br>
 
