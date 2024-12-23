@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/List.css';
 
 interface Pokemon {
   name: string;
@@ -10,9 +11,9 @@ interface ListProps {
 
 export const List: React.FC<ListProps> = ({pokemonList}) => {
   return (
-    <ul>
+    <ul className='pokemon-grid'>
       {pokemonList.map((pokemon, index) => (
-        <li key={index}>{pokemon.name}</li>
+        <li key={index} className='pokemon-item'>{pokemon.name}</li>
       ))}
     </ul>
   )
