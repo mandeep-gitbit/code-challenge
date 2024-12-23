@@ -15,4 +15,26 @@
     font-size: 16px;
     font-weight: bold;
     text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
+
+  .pokemon-btn-delete {
+    background-color: #f10e0e;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 0px 8px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+
+  .pokemon-btn-delete:hover {
+    background-color: #ff1a1a;
+    outline: 2px solid black;
+  }
+  

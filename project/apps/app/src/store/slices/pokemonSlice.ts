@@ -13,9 +13,13 @@ const pokemonSlice = createSlice({
     initialState,
     reducers: {
         setPokemonList(state, action: PayloadAction<string[]>) {
-            state.list = action.payload;
+            state.list = action.payload.map((pokemon: any) => pokemon.name);
         },
+        removePokemon(state, action: PayloadAction<string>) {
+            state.list = state.list.filter((pokemon) => pokemon !== action.payload);
+        }
     },
 })
 
 export  { pokemonSlice }; 
+export const { setPokemonList, removePokemon } = pokemonSlice.actions;

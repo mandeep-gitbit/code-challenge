@@ -70,7 +70,9 @@ commit the code as `task-4`<br>
 
 ## Task 5:
 Assignment: Create button for each pokémon where an Action will be dispatched to remove the pokémon from the store 
-Question 6: How can you verify the action has been dispatched?
+Question 6: How can you verify the action has been dispatched?<br>
+To verify that a action has been dispatched, we can use Redux DevTools Extension or can use the console logs in handleRemove.
+
 
 ## Task 6:
 Question 7: explain the use of `useEffect` hook in React
@@ -79,8 +81,3 @@ Question 9: What use cases would a HOC be usefull?
 Question 10: What does it indicate when a component is prefixed with `use` and `with`
 Question 11: What is a Generic type in typescript?
 Question 12: Whats the difference between a controlled and uncontrolled input in React?
-
-
-
-
-
