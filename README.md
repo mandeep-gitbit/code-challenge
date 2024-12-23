@@ -71,13 +71,29 @@ commit the code as `task-4`<br>
 ## Task 5:
 Assignment: Create button for each pokémon where an Action will be dispatched to remove the pokémon from the store 
 Question 6: How can you verify the action has been dispatched?<br>
-To verify that a action has been dispatched, we can use Redux DevTools Extension or can use the console logs in handleRemove.
+To verify that a action has been dispatched, we can use Reduc DevTools Extension or can use the console logs in handleRemove.
 
 
 ## Task 6:
-Question 7: explain the use of `useEffect` hook in React
-Question 8: What is A High Order Component?
+Question 7: explain the use of `useEffect` hook in React<br>
+The `useEffect` hook is one of the most important hooks in ReactJS. It operates during all three phases of a component's lifecycle: mounting, updating, and unmounting. The primary purpose of the `useEffect` hook is to handle side effects, such as data fetching and managing subscriptions, without causing blocking or delays in rendering. It effectively serves as the lifecycle methods for functional components. It also gives us the cleanup function that gets executed when component unmounts.<br>
+
+Question 8: What is A High Order Component?<br>
+A HOC is a component which takes a component as a prop or children and returns us the new component with additional functionality. With this also we can implement `inheritance`. It enhances the composability and keeps the separation of concerns.<br>
+
 Question 9: What use cases would a HOC be usefull?
-Question 10: What does it indicate when a component is prefixed with `use` and `with`
-Question 11: What is a Generic type in typescript?
-Question 12: Whats the difference between a controlled and uncontrolled input in React?
+1) Code reuse
+2) Logic abstraction
+3) Inhance composability
+4) Conditional rendering of a component<br>
+
+Question 10: What does it indicate when a component is prefixed with `use` and `with`<br>
+`use` indicates its a react hook. Example `useState`,`useEffect`,`useRef` etc. <br>
+`with` indicates its a HOC. Example `withRouter`.<br>
+
+Question 11: What is a Generic type in typescript?<br>
+Generic type in TypeScript allows us to create reusable components and functions that can work with any data type while maintaining type safety.<br>
+
+Question 12: Whats the difference between a controlled and uncontrolled input in React?<br>
+*Controlled input* - The input value is controlled by react state internally. It is set by react and can be update via handlers.<br>
+*Uncontrolled input* - The input value is managed by DOM ITSELF, We can use refs to access the value.
