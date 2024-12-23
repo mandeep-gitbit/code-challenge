@@ -1,5 +1,19 @@
-import React from 'react'
+import React from 'react';
 
-export const List = () => {
-  return <p>List</p>
+interface Pokemon {
+  name: string;
+}
+
+interface ListProps {
+  pokemonList: Pokemon[];
+}
+
+export const List: React.FC<ListProps> = ({pokemonList}) => {
+  return (
+    <ul>
+      {pokemonList.map((pokemon, index) => (
+        <li key={index}>{pokemon.name}</li>
+      ))}
+    </ul>
+  )
 }

@@ -24,7 +24,7 @@ const App = () => {
   return (
   <>
     <h1>Pokemon list:</h1>
-    <List />
+    <List pokemonList={pokemonList}/>
   </>
   )
 }
