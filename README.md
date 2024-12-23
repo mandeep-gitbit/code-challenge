@@ -58,8 +58,14 @@ commit the code as `task-3`<br>
 ## Task 4:
 Assignment: Introduce `redux-toolkit` and store the list of pokémon in the redux store.<br>
 Question 4: What makes the `createSlice` in redux-toolkit difference then A Reducer in redux?<br>
-Question 5: Describe the benefits of immutable code.<br>
+In short createSlice helps us to simplify the process of creating reducers and actions.It combines the reducers, action types and action creators all together. In slice we can have respective reducers of individual functionality all together. For e.g. User CRUD operations we can combine in userSlice.
 
+Question 5: Describe the benefits of immutable code.<br>
+It simplifies the state management.<br>
+It adds predictability.<br>
+Saves us from unwanted bugs.<br>
+Optimizes performance.<br>
+Sequentially we can do the operations.<br>
 commit the code as `task-4`<br>
 
 ## Task 5:
